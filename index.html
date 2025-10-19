@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Calculator</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="bg"></div>
+  <div id="calcu">
+    <table>
+      <tr>
+        <td id="result" colspan="4"></td>
+      </tr>
+      <tr class="top">
+        <td onclick="clearing()">C</td>
+        <td onclick="backspace()">⌫</td>
+        <td onclick="boing()">🪗</td>
+        <td onclick="newOperator('/')" , class="right">÷</td>
+      </tr>
+      <tr>
+        <td onclick="newOperator(1)">1</td>
+        <td onclick="newOperator(2)">2</td>
+        <td onclick="newOperator(3)">3</td>
+        <td onclick="newOperator('*')" class="right">×</td>
+      </tr>
+      <tr>
+        <td onclick="newOperator(4)">4</td>
+        <td onclick="newOperator(5)">5</td>
+        <td onclick="newOperator(6)">6</td>
+        <td onclick="newOperator('-')" class="right">-</td>
+      </tr>
+      <tr>
+        <td onclick="newOperator(7)">7</td>
+        <td onclick="newOperator(8)">8</td>
+        <td onclick="newOperator(9)">9</td>
+        <td onclick="newOperator('+')" class="right">+</td>
+      </tr>
+      <tr>
+        <td onclick="ring()">🪙</td>
+        <td onclick="newOperator(0)">0</td>
+        <td onclick="newOperator('.')">.</td>
+        <td onclick="calculate()" class="right">=</td>
+      </tr>
+    </table>
+    <pre id="text">
+THIS IS VERY BAD
+  CALCULATOR
+    NOT GONNA LIE
+BUT YEAH...
+I DON'T KNOW HOW TO
+      JAVASCRIPT
+    </pre>
+  </div>
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>
